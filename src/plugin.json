@@ -20,8 +20,14 @@
       "large": "img/MongoDB_Gray_Logo_FullColor_RGB-01.jpg"
     },
     "links": [
-      {"name": "GitHub", "url": "https://github.com/grafana/simple-json-datasource"},
-      {"name": "MIT License", "url": "https://github.com/grafana/simple-json-datasource/blob/master/LICENSE"}
+      {
+        "name": "GitHub",
+        "url": "https://github.com/grafana/simple-json-datasource"
+      },
+      {
+        "name": "MIT License",
+        "url": "https://github.com/grafana/simple-json-datasource/blob/master/LICENSE"
+      }
     ],
     "version": "0.8.1",
     "updated": "2018-08-14"
@@ -29,6 +35,6 @@
 
   "dependencies": {
     "grafanaVersion": "3.x.x",
-    "plugins": [ ]
+    "plugins": []
   }
 }

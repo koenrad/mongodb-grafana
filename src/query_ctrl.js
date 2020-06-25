@@ -1,19 +1,18 @@
-import {QueryCtrl} from 'app/plugins/sdk';
-import './css/query-editor.css!'
+import { QueryCtrl } from "app/plugins/sdk";
+import "./css/query-editor.css!";
 
 export class GenericDatasourceQueryCtrl extends QueryCtrl {
-
-  constructor($scope, $injector)  {
+  constructor($scope, $injector) {
     super($scope, $injector);
 
     this.scope = $scope;
-    this.target.target = this.target.target || 'select metric';
-    this.target.type = this.target.type || 'timeserie';
+    this.target.target = this.target.target || "select metric";
+    this.target.type = this.target.type || "timeserie";
     this.target.rawQuery = true;
   }
 
   getOptions(query) {
-    return this.datasource.metricFindQuery(query || '');
+    return this.datasource.metricFindQuery(query || "");
   }
 
   toggleEditorMode() {
@@ -25,5 +24,4 @@ export class GenericDatasourceQueryCtrl extends QueryCtrl {
   }
 }
 
-GenericDatasourceQueryCtrl.templateUrl = 'partials/query.editor.html';
-
+GenericDatasourceQueryCtrl.templateUrl = "partials/query.editor.html";

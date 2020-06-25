@@ -1,6 +1,4 @@
 {
-    "cSpell.words": [
-        "grafana",
-        "timeserie"
-    ]
+  "cSpell.words": ["grafana", "timeserie"],
+  "editor.formatOnSave": true
 }
