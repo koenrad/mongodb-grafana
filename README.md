@@ -9,6 +9,19 @@ Allows MongoDB to be used as a data source for Grafana by providing a proxy to c
 - **Grafana** > 3.x.x
 - **MongoDB** > 3.4.x
 
+## Demo in Docker
+
+- Bootstraps [Grafana](https://github.com/grafana/grafana-docker) with mongodb proxy plugin
+- Launches mongodb proxy service
+- Imports preconfigured Dashboards
+
+Grafana will be available on `3000` port
+
+```
+git clone https://github.com/JamesOsgood/mongodb-grafana.git
+docker-compose up
+```
+
 ## Installation
 
 ### Install the Grafana plugin components
@@ -108,7 +121,6 @@ The dashboard in `examples\RPI MongoDB Bucket - Atlas.json` shows this.
 #### Example 3 - Using a Tabel Panel
 
 <img src="src/img/table_panel.png" alt="Table Panel" style="width: 800px;"/>
-
 Table panels are now supported with queries of the form
 
 ```javascript
