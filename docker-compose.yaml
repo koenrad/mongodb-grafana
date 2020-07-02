@@ -10,5 +10,16 @@ services:
       - "./examples/docker-demo/dashboards:/etc/grafana/provisioning/dashboards"
       - "./examples:/var/lib/grafana/dashboards"
   gf-mdb-proxy:
-    build: .
     image: jamesosgood/mongodb-grafana
+    ports:
+      - "3333:3333"
+    build:
+      context: .
+      dockerfile: Dockerfile
+  mongo:
+    image: mongo:4.2
+    container_name: mongo-db
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./mongo:/data/db
